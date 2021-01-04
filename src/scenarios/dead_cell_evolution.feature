@@ -19,7 +19,7 @@ Feature: Evolving a dead cell
     When I evolve the board
     Then the center cell should be dead
 
-  Scenario: Dead cell with 2 neighborss stays dead
+  Scenario: Dead cell with 2 neighbors stays dead
     Given the following setup
       | . | x | . |
       | . | . | x |
@@ -27,7 +27,7 @@ Feature: Evolving a dead cell
     When I evolve the board
     Then the center cell should be dead
 
-  Scenario: Dead cell with 3 neighborss comes to life
+  Scenario: Dead cell with 3 neighbors comes to life
     Given the following setup
       | x | x | x |
       | . | . | . |
@@ -35,7 +35,7 @@ Feature: Evolving a dead cell
     When I evolve the board
     Then the center cell should be alive
 
-  Scenario: Dead cell with 4 neighborss stays dead
+  Scenario: Dead cell with 4 neighbors stays dead
     Given the following setup
       | x | x | x |
       | . | . | x |
@@ -43,7 +43,7 @@ Feature: Evolving a dead cell
     When I evolve the board
     Then the center cell should be dead
 
-  Scenario: Dead cell with 5 neighborss stays dead
+  Scenario: Dead cell with 5 neighbors stays dead
     Given the following setup
       | x | x | x |
       | x | . | x |
@@ -51,7 +51,7 @@ Feature: Evolving a dead cell
     When I evolve the board
     Then the center cell should be dead
 
-  Scenario: Dead cell with 6 neighborss stays dead
+  Scenario: Dead cell with 6 neighbors stays dead
     Given the following setup
       | x | x | x |
       | x | . | x |
@@ -59,7 +59,7 @@ Feature: Evolving a dead cell
     When I evolve the board
     Then the center cell should be dead
 
-  Scenario: Dead cell with 7 neighborss stays dead
+  Scenario: Dead cell with 7 neighbors stays dead
     Given the following setup
       | x | x | x |
       | x | . | x |
@@ -67,7 +67,7 @@ Feature: Evolving a dead cell
     When I evolve the board
     Then the center cell should be dead
 
-  Scenario: Dead cell with 8 neighborss stays dead
+  Scenario: Dead cell with 8 neighbors stays dead
     Given the following setup
       | x | x | x |
       | x | . | x |
