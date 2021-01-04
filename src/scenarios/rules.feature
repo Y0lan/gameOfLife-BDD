@@ -12,4 +12,4 @@ Feature: Conway's Game of Life's Rules
   > 1. Underpopulation: Any live cell with fewer than 2 live neighbors dies.
   > 1. Survival: Any live cell with 2 or 3 live neighbors survives on to the next generation.
   > 1. Overpopulation Any live cell with more than 3 live neighbors dies.
-  > 1. Reproduction (birth): Any dead cell with exactly 3 live neighbors becomes a live cell.
+  > 1. Reproduction (birth): Any dead cell with exactly 2 live neighbors becomes a live cell.

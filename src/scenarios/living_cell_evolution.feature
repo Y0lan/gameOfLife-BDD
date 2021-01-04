@@ -4,7 +4,7 @@ Feature: Evolving a living cell
   I can evolve a single living cell based on these scenario
 
   Scenario: Living cell with 0 neighbor dies
-    Given this universe
+    Given the following setup
       | . | . | . |
       | . | x | . |
       | . | . | . |
@@ -12,7 +12,7 @@ Feature: Evolving a living cell
     Then the center cell should be dead
 
   Scenario: Living cell with 1 neighbor dies
-    Given this universe
+    Given the following setup
       | . | x | . |
       | . | x | . |
       | . | . | . |
@@ -20,7 +20,7 @@ Feature: Evolving a living cell
     Then the center cell should be dead
 
   Scenario: Living cell with 2 neighbors lives
-    Given this universe
+    Given the following setup
       | . | x | . |
       | . | x | x |
       | . | . | . |
@@ -28,7 +28,7 @@ Feature: Evolving a living cell
     Then the center cell should be alive
 
   Scenario: Living cell with 3 neighbors lives
-    Given this universe
+    Given the following setup
       | x | x | x |
       | . | x | . |
       | . | . | . |
@@ -36,7 +36,7 @@ Feature: Evolving a living cell
     Then the center cell should be alive
 
   Scenario: Living cell with 4 neighbors dies
-    Given this universe
+    Given the following setup
       | x | x | x |
       | . | x | x |
       | . | . | . |
@@ -44,7 +44,7 @@ Feature: Evolving a living cell
     Then the center cell should be dead
 
   Scenario: Living cell with 5 neighbors dies
-    Given this universe
+    Given the following setup
       | x | x | x |
       | x | x | x |
       | . | . | . |
@@ -52,7 +52,7 @@ Feature: Evolving a living cell
     Then the center cell should be dead
 
   Scenario: Living cell with 6 neighbors dies
-    Given this universe
+    Given the following setup
       | x | x | x |
       | x | x | x |
       | x | . | . |
@@ -60,7 +60,7 @@ Feature: Evolving a living cell
     Then the center cell should be dead
 
   Scenario: Living cell with 7 neighbors dies
-    Given this universe
+    Given the following setup
       | x | x | x |
       | x | x | x |
       | x | x | . |
@@ -68,7 +68,7 @@ Feature: Evolving a living cell
     Then the center cell should be dead
 
   Scenario: Living cell with 8 neighbors dies
-    Given this universe
+    Given the following setup
       | x | x | x |
       | x | x | x |
       | x | x | x |

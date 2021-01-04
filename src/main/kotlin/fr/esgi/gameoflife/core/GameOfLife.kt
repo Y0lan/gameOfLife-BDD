@@ -18,13 +18,13 @@ val translate =
 val getCellValue =
     { world: World, position: Position -> world.getOrNull(position.row)?.getOrNull(position.column) ?: DEAD }.curried()
 
-fun evolve(world: World): List<List<State>> {
+fun evolve(world: World): World {
     return world.mapIndexed { row, list ->
         list.mapIndexed { col, cell ->
             val evolveCell = countAliveNeighbours(world) andThen computeNextState(cell)
             evolveCell(Position(row, col))
-        }
-    }
+        }.toMutableList()
+    }.toMutableList()
 }
 
 val countAliveNeighbours = { world: World, position: Position ->
